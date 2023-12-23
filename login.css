@@ -39,14 +39,14 @@ h1{
     opacity: 1;
 
 }
-.form-control label{
+.input-group label{
     margin-left: 10%;
     font-size:medium;
     color: white;
     text-shadow:2px 2px 3px rgba(0, 0,0,0.4);
     opacity: .9;
 }
-.form-control input{
+.input-group input{
     border-radius: 5px;
     margin-bottom: 10px;
     height: 30px;
@@ -60,7 +60,7 @@ h1{
 
 }
 
-button{
+#form button{
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 5px;
     width: 50px;
@@ -72,6 +72,7 @@ button{
     color: white;
     border-left: 1px solid rgba(255, 255, 255, 0.6);
     border-top: 1px solid rgba(255, 255, 255, 0.6);
+    cursor: pointer;
 
 }
 a{
@@ -80,28 +81,29 @@ a{
     color: white;
     font-size: small;
 }
-.form-control.success input{
-    border-bottom: rgb(0, 255, 0);
+.input-group.success input{
+    border-color: rgb(0, 0, 0);
 }
-.form-control.error input{
-    border-bottom: rgb(255, 0, 0);
+.input-group.error input{
+    border-color: rgb(255, 0, 0);
 }
-.form-control i{
+.input-group i{
     visibility:hidden;
     position: absolute;
 }
-.form-control.success i.fa-circle-check{
-    color: rgb(0, 255, 0);
+.input-group.success i.fa-circle-check{
+    color: rgb(0,0, 0);
     visibility: visible;
 }
-.form-control.error i.fa-exclamation-check{
+.input-group.error i.fa-circle-exclamation{
     color: rgb(255, 0, 0);
     visibility: visible;
+    
 }
-.form-control small{
+.input-group .error{
     color: red;
     margin-left: 10%;
-    visibility: hidden;
     left: 0;
     bottom: 0;
+    font-size: small;
 }
